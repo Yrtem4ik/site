@@ -72,6 +72,10 @@ body{
     background-color: #cfd186;
 }
 
+p{
+    margin: 50px;
+    font-size: 30px;
+}
 /* calculator */
 .calculator {
     width: 200px;
