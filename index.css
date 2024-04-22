@@ -122,3 +122,37 @@ p{
     width: 100%;
     padding-top: 50px;
   }
+  .lenght_table{
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color:#a1a378;
+    border: 10px solid #8d8f68;
+  }
+
+  /* Input */
+  input{
+    position: relative;
+    display: flex;
+    padding: 4px
+  }
+  .container{
+    display: flex;
+    justify-content: center;
+
+    padding: 20px;
+   
+  }
+  .select{
+    display: flex;
+  }
+  .select:last-child{
+    margin-top: 20px;
+  }
+  .unit1{
+    width: 200px;
+    height: 40px;
+  }
+  .unit2{
+    width: 200px;
+    height: 40px;
+  }

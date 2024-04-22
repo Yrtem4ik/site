@@ -18,14 +18,90 @@
             <nav>
                 <a href="about.html">About</a>
                 <a href="calc.html">Calculator</a>
+                <a href="generator.html">Random generator</a>
             </nav>
             
         </header>
 
-        in progress
+        <div class="container">
+            <div class="selects">
+                <div class="select">
+                    <select id="unit1" class="unit1">
+                    <option value="mm">Міліметри</option>
+                    <option value="cm">Сантиметри</option>
+                    <option value="m">Метри</option>
+                    <option value="km">Кілометри</option>
+                    <option value="in">Дюйми</option>
+                    <option value="ft">Фути</option>
+                    <option value="yd">Ярди</option>
+                    <option value="mi">Милі</option>
+                    </select>
+                    <input type="number" id="value1" placeholder="Введіть значення">
+                </div>
+                <div class="select">
+                    <select id="unit2" class="unit2">
+                    <option value="mm">Міліметри</option>
+                    <option value="cm">Сантиметри</option>
+                    <option value="m">Метри</option>
+                    <option value="km">Кілометри</option>
+                    <option value="in">Дюйми</option>
+                    <option value="ft">Фути</option>
+                    <option value="yd">Ярди</option>
+                    <option value="mi">Милі</option>
+                    </select>
+                    <input type="number" id="value2" placeholder="Вивід значення">
+                </div>
+            </div>
+        </div>
+          
+        <table border="1" class="lenght_table">
+            <tbody>
+                <caption>Таблиця вимірювань довжини</caption>
+                <tr>
+                    <th>Величина вимірювання</th>
+                    <th>Одиниця вимірювання</th>
+                </tr>
+                <tr>
+                    <td>Міліметр (мм)</td>
+                    <td>1/1000 метра</td>
+                </tr>
+                <tr>
+                    <td>Сантиметр (см)</td>
+                    <td>1/100 метра</td>
+                </tr>
+                <tr>
+                    <td>Метр (м)</td>
+                    <td>Стандартна одиниця довжини</td>
+                </tr>
+                <tr>
+                    <td>Кілометр (км)</td>
+                    <td>1000 метрів</td>
+                </tr>
+                <tr>
+                    <td>Дюйм (дюйм)</td>
+                    <td>2.54 сантиметра</td>
+                </tr>
+                <tr>
+                    <td>Фут (фт)</td>
+                    <td>0.3048 метра</td>
+                </tr>
+                <tr>
+                    <td>Ярд (ярд)</td>
+                    <td>0.9144 метра</td>
+                </tr>
+                <tr>
+                    <td>Миля</td>
+                    <td>1609.34 метра</td>
+                </tr>
+            </tbody>
+          </table>
+
+          
+          <!-- </div> -->
 
         <footer>
 
         </footer>
     </body>
+    <script src="converter.js"></script>
 </html>
