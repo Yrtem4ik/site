@@ -2,13 +2,25 @@ document.getElementById('unit1').addEventListener('change', convert);
 document.getElementById('unit2').addEventListener('change', convert);
 document.getElementById('value1').addEventListener('input', convert);
 
+document.getElementById('change_units').addEventListener('click', change_units); 
+function change_units (){
+  un1 = document.getElementById('unit1').value;
+  un2 = document.getElementById('unit2').value;
+  document.getElementById('unit2').value = un1;
+  document.getElementById('unit1').value = un2;
+
+  val1 = document.getElementById('value1').value; 
+  val2 = document.getElementById('value2').value;
+  document.getElementById('value2').value = val1;
+  document.getElementById('value1').value = val2;
+
+  convert();
+}
 function convert() {
-  const unit2 = document.getElementById('unit1').value;
   const unit1 = document.getElementById('unit2').value;
+  const unit2 = document.getElementById('unit1').value;
   const value1 = parseFloat(document.getElementById('value1').value);
   let value2;
-
-
 switch (unit1) {
     case 'mm':
       value2 = convertFromMeters(convertToMeters(value1, unit1), unit2);

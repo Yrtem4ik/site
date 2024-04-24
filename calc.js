@@ -1,6 +1,5 @@
 function appendToDisplay(value) {
     document.getElementById('display').value += value;
-    for();
   }
   
   function clearDisplay() {

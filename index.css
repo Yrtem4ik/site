@@ -73,7 +73,6 @@ body{
 }
 
 p{
-    margin: 50px;
     font-size: 30px;
 }
 /* calculator */
@@ -135,6 +134,9 @@ p{
     display: flex;
     padding: 4px
   }
+  input[type=number]{
+    margin: 10px;
+  }
   .container{
     display: flex;
     justify-content: center;
@@ -155,4 +157,16 @@ p{
   .unit2{
     width: 200px;
     height: 40px;
+  }
+
+  .gen{
+    display: flex;
+    margin: 15px;
+    justify-content: center;
+    align-items: center;
+  }
+  .gen_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
