@@ -1,16 +1,12 @@
-document.getElementById('unit1').addEventListener('input', getRandomDecimal);
-document.getElementById('unit2').addEventListener('input', getRandomDecimal);
+//document.getElementById('value1').addEventListener('input', getRandomDecimal);
+//document.getElementById('value2').addEventListener('input', getRandomDecimal);
 
 
-function getRandomDecimal(min, max, decimalPlaces) {
-    const unit1 = document.getElementById('unit1').value;
-    const unit2 = document.getElementById('unit2').value;
-    const value1 = parseFloat(document.getElementById('value1').value);
-    let value2;
+function getRandomDecimal() {
+    const min = parseFloat(document.getElementById('value1').value);
+    const max = parseFloat(document.getElementById('value2').value);
 
-    return parseFloat((Math.random() * (max - min) + min).toFixed(decimalPlaces));
+    document.getElementById('value3').value = parseFloat((Math.random() * (max - min) + min).toFixed(3));
   }
 
-  document.getElementById('gen_button').addEventListener('click', function() {
-    getRandomDecimal()
-  });
+  document.getElementById('gen_button').addEventListener('click', getRandomDecimal);
